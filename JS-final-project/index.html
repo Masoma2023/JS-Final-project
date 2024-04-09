@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Final Project</title>
+  </head>
+  <body class="bg-gradient-to-r from-green-300 to-blue-300">
+    <div class="p-8 bg-white rounded-lg shadow-lg w-3/5 mx-auto mt-6">
+      <div class="flex items-center mb-6">
+        <h1 class="text-2xl font-semibold text-green-600">Tools List</h1>
+      </div>
+      <form id="form" action="" class="mb-3 space-x-3">
+        <input
+          id="item"
+          type="text"
+          class="rounded px-3 py-2 border border-gray-200"
+          placeholder="Fonts"
+        />
+        <select
+          id="category"
+          class="text-gray-800 border border-gray-200 rounded px-3 py-2.5 text-gray-900"
+        >
+          <option></option>
+          <option value="Google Fonts">Google Fonts</option>
+          <option value="color Space">Color Space</option>
+          <option value="Hero Icons">Hero Icons</option>
+          <option value="Unsplash">Unsplash</option>
+        </select>
+        <button type="submit" class="rounded bg-blue-500 text-white px-6 py-2">
+          Add
+        </button>
+      </form>
+      <div class="text-gray-700">
+        <ul id="list-items"></ul>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
+
